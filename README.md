@@ -1,5 +1,5 @@
 
-GYM CUERPO FITNESS 
+CUERPO FITNESS GYM
 
 
 Descripcion 
