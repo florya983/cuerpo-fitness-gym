@@ -1,21 +1,21 @@
 
-GYM BODY FITNESS 
+GYM CUERPO FITNESS 
 
 
-Description 
+Descripcion 
 
-Gym website where users can:
+Página web de gimnasio donde los usuarios pueden: 
 
-View available classes
+Ver clases disponibles 
 
-View promotions
+Visualizar promociones 
 
-Contact the gym
+Contactar al gym
 
-Access registration and login forms
+Registrarse o ingresar 
 
 
-Technologies used
+Tecnologías usadas
 
 - HTML
 - CSS
