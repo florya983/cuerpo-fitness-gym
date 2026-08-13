@@ -23,5 +23,5 @@ Tecnologías usadas
 
 Demo
 
+https://florya983.github.io/cuerpo-fitness-gym/
 
-https://florya983.github.io/gym-body-fitness/
