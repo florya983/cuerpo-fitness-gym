@@ -1,44 +1,41 @@
 
-const formularioAcceso = document.querySelector("#form-acceso");
 
-formularioAcceso.addEventListener("submit", function(event) {
+function validarAcceso() {
 
     const dni = document.querySelector("#dni-acceso").value.trim();
     const password = document.querySelector("#password").value.trim();
+
     const errorDni = document.querySelector("#error-dni-acceso");
     const errorPassword = document.querySelector("#error-password");
+
     errorDni.textContent = "";
     errorPassword.textContent = "";
 
-
     if (dni === "") {
-        event.preventDefault();
         errorDni.textContent = "Debes completar DNI";
-        return;
+        return false;
     }
 
     if (isNaN(dni)) {
-        event.preventDefault();
         errorDni.textContent = "El DNI debe contener solamente números";
-        return;
+        return false;
     }
 
     if (password === "") {
-        event.preventDefault();
         errorPassword.textContent = "Debes completar la contraseña";
-        return;
+        return false;
     }
 
-});
+    return true;
+}
 
 
-const formularioRegistro = document.querySelector("#form-registro");
-
-formularioRegistro.addEventListener("submit", function(event) {
+function validarRegistro() {
 
     const nombre = document.querySelector("#apellido").value.trim();
     const dni = document.querySelector("#dni-registro").value.trim();
     const email = document.querySelector("#email").value.trim();
+
     const errorNombre = document.querySelector("#error-nombre");
     const errorDni = document.querySelector("#error-dni-registro");
     const errorEmail = document.querySelector("#error-email");
@@ -48,30 +45,29 @@ formularioRegistro.addEventListener("submit", function(event) {
     errorEmail.textContent = "";
 
     if (nombre === "") {
-        event.preventDefault();
         errorNombre.textContent = "Debes completar el nombre";
-        return;
+        return false;
     }
-
+    if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(nombre)) {
+         errorNombre.textContent = "El nombre debe contener solamente letras";
+        return false;
+}
     if (dni === "") {
-        event.preventDefault();
         errorDni.textContent = "Debes completar DNI";
-        return;
+        return false;
     }
 
     if (isNaN(dni)) {
-        event.preventDefault();
         errorDni.textContent = "El DNI debe contener solamente números";
-        return;
+        return false;
     }
 
     if (email === "") {
-        event.preventDefault();
         errorEmail.textContent = "Debes completar el email";
-        return;
+        return false;
     }
 
-});
-
+    return true;
+}
 
 
