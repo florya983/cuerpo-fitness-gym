@@ -19,7 +19,7 @@ Tecnologías usadas
 
 - HTML
 - CSS
-
+-Javascript
 
 Demo
 
